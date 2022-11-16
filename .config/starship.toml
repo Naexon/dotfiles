@@ -1,0 +1,83 @@
+[username]
+disabled = false
+style_user = "green bold"
+style_root = "red bold"
+format = "[$user]($style) "
+show_always = true
+
+[hostname]
+disabled = false
+ssh_only = true
+format = 'on [$hostname](bold yellow) '
+trim_at = "."
+
+[cmd_duration]
+disabled = false
+min_time = 4
+show_milliseconds = false
+style = "bold italic blue"
+
+[character]
+success_symbol = "[>](bold green)"
+error_symbol = "[>](bold red)"
+vimcmd_symbol = "[<](bold green)"
+
+[directory]
+truncate_to_repo = false
+truncation_length = 5
+truncation_symbol = ".../"
+read_only = " ro"
+
+[git_commit]
+tag_symbol = " tag "
+
+[git_status]
+disabled = true
+ahead = ">"
+behind = "<"
+diverged = "<>"
+renamed = "r"
+deleted = "x"
+
+[git_branch]
+symbol = "git "
+
+[package]
+symbol = "pkg "
+
+[c]
+symbol = "C "
+format = 'via [$symbol]($style)' # does not show the version
+
+[rust]
+symbol = "rs "
+format = 'via [$symbol]($style)'
+
+[golang]
+symbol = "go "
+format = 'via [$symbol]($style)'
+
+[java]
+symbol = "java "
+
+[nodejs]
+symbol = "nodejs "
+
+[python]
+symbol = "py "
+
+[cmake]
+symbol = "cmake "
+format = 'via [$symbol]($style)'
+
+[docker_context]
+symbol = "docker "
+format = 'via [$symbol]($style)'
+
+[helm]
+symbol = "helm"
+format = 'via [$symbol]($style)'
+
+[terraform]
+symbol = "terraform "
+format = 'via [$symbol]($style)'
