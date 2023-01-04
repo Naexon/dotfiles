@@ -8,7 +8,7 @@ show_always = true
 [hostname]
 disabled = false
 ssh_only = true
-format = 'on [$hostname](bold yellow) '
+format = "on [$hostname](bold yellow) "
 trim_at = "."
 
 [cmd_duration]
@@ -16,6 +16,14 @@ disabled = false
 min_time = 4
 show_milliseconds = false
 style = "bold italic blue"
+
+[battery]
+format = "[$percentage]($style) "
+
+[[battery.display]]
+threshold = 10
+style = "bold red"
+
 
 [character]
 success_symbol = "[>](bold green)"
@@ -32,7 +40,7 @@ read_only = " ro"
 tag_symbol = " tag "
 
 [git_status]
-disabled = true
+disabled = false
 ahead = ">"
 behind = "<"
 diverged = "<>"
@@ -47,15 +55,15 @@ symbol = "pkg "
 
 [c]
 symbol = "C "
-format = 'via [$symbol]($style)' # does not show the version
+format = "via [$symbol]($style)" # does not show the version
 
 [rust]
 symbol = "rs "
-format = 'via [$symbol]($style)'
+format = "via [$symbol]($style)"
 
 [golang]
 symbol = "go "
-format = 'via [$symbol]($style)'
+format = "via [$symbol]($style)"
 
 [java]
 symbol = "java "
@@ -68,16 +76,16 @@ symbol = "py "
 
 [cmake]
 symbol = "cmake "
-format = 'via [$symbol]($style)'
+format = "via [$symbol]($style)"
 
 [docker_context]
 symbol = "docker "
-format = 'via [$symbol]($style)'
+format = "via [$symbol]($style)"
 
 [helm]
 symbol = "helm"
-format = 'via [$symbol]($style)'
+format = "via [$symbol]($style)"
 
 [terraform]
 symbol = "terraform "
-format = 'via [$symbol]($style)'
+format = "via [$symbol]($style)"
