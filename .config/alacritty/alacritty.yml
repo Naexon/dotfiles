@@ -1,5 +1,9 @@
 # See https://wiki.archlinux.org/title/Alacritty
 
+# Set fish as default shell
+shell:
+  program: /usr/bin/fish
+
 # Spawn new instance in same directory using Ctrl+Shift+Enter
 key_bindings:
   - { key: Return,   mods: Control|Shift, action: SpawnNewInstance }
