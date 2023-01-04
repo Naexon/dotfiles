@@ -2,10 +2,10 @@
 
 Dotfiles are commonly used to customize and personalize Linux- or Unix-based systems. This repository contains my personal dotfiles.
 
-Here is a list of the programs I use. Programs for which I do not provide a dotfile are marked with a red X.
+Here is a list of the programs I use. Programs for which I do not provide a dotfile are marked accordingly.
 
-:white_check_mark: - alacritty: terminal emulator
+* __alacritty__ - terminal emulator
 
-:x: - nala: frontend for the APT package manager
+* __nala__ :x: -  frontend for the APT package manager
 
-:green_check_mark: starship: shell promt
+* __starship__ - shell promt
